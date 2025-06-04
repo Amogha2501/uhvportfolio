@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amogha - Portfolio</title> <link rel="stylesheet" href="code.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-     <script>
-        function toggleUHVParagraph() {
-            const paragraph = document.getElementById('uhv-paragraph');
-            paragraph.style.display = paragraph.style.display === 'none' ? 'block' : 'none';
-        }
-    </script>
+    <title>Amogha - Portfolio</title>
+    <link rel="stylesheet" href="code.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
     <header class="site-header">
         <div class="header-content">
-            <img src="https://raw.githubusercontent.com/Amogha2501/OIBSIP/master/as/Photo.jpg" alt="Profile-Photo" class="profile-photo"> <h1>Amogha H Shetty</h1> <p class="tagline">Engineering Student | Building Solutions with Code</p> </div>
+            <img src="https://raw.githubusercontent.com/Amogha2501/OIBSIP/master/as/Photo.jpg" alt="Profile-Photo" class="profile-photo">
+            <!-- Name will be dynamically split into letters by JavaScript -->
+            <h1 id="my-name">Amogha H Shetty</h1>
+            <p class="tagline">Engineering Student | Building Solutions with Code</p>
+        </div>
     </header>
 
     <nav class="site-nav">
@@ -26,7 +29,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#uhv">UHV</a></li>
             <li><a href="#contact">Contact</a></li>
-            </ul>
+        </ul>
     </nav>
 
     <main class="container">
@@ -34,8 +37,9 @@
         <section id="about" class="section-block">
             <h2>About Me</h2>
             <p>
-                Hello there! I'm Amogha H Shetty, an enthusiastic engineering student.I am currently pursuing my Bachelor's degree at Sahyadri College Of Engineering And Management.
-                I enjoy the process of taking a concept from idea to execution.I approach new challenges with curiosity and a resolute focus on finding a way forward and my project experience has strengthened my ability to analyze, strategize, and implement solutions.</p>
+                Hello there! I'm Amogha H Shetty, an enthusiastic engineering student. I am currently pursuing my Bachelor's degree at Sahyadri College Of Engineering And Management.
+                I enjoy the process of taking a concept from idea to execution. I approach new challenges with curiosity and a resolute focus on finding a way forward and my project experience has strengthened my ability to analyze, strategize, and implement solutions.
+            </p>
             <p>
                 This is a showcase of some of my work and the skills I've developed. Thanks for visiting!
             </p>
@@ -45,22 +49,25 @@
             <h2>Skills</h2>
             <div class="skills-list">
                 <div class="skill-category">
-                    <h3>Programming/Technical</h3> <ul>
+                    <h3>Programming/Technical</h3>
+                    <ul>
                         <li>HTML/CSS/JAVASCRIPT</li>
                         <li>Python</li>
                         <li>C/C++</li>
                         <li>Java</li>
-                        </ul>
+                    </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools/Platforms</h3> <ul>
+                    <h3>Tools/Platforms</h3>
+                    <ul>
                         <li>Git & GitHub</li>
                         <li>VS Code</li>
                         <li>SQLite</li>
-                        </ul>
+                    </ul>
                 </div>
                  <div class="skill-category">
-                    <h3>Other Skills</h3> <ul>
+                    <h3>Other Skills</h3>
+                    <ul>
                         <li>Communication</li>
                         <li>Problem Solving</li>
                     </ul>
@@ -69,12 +76,15 @@
         </section>
 
         <section id="projects" class="section-block">
-            <h2>My Work</h2> <div class="project-container">
+            <h2>My Work</h2>
+            <div class="project-container">
                 <input type="checkbox" id="project1-toggle" class="project-toggle-input" hidden>
 
                 <label for="project1-toggle" class="project-summary">
-                    <img src="https://www.tatvasoft.com/outsourcing/wp-content/uploads/2022/12/chatbots-in-healthcare-its-benefits-use-cases-and-challenges-1280x720.jpg" alt="Project 1 Image"> <div class="summary-info">
-                         <h3>Project Title 1: Medbot</h3> <p class="project-description-short"> MEDBOT is envisioned as an AI-driven health chatbot designed to improve access to basic medical information and guidance, aiming to empower users to understand their health better and make informed decisions about seeking professional care when needed.</p>
+                    <img src="https://www.tatvasoft.com/outsourcing/wp-content/uploads/2022/12/chatbots-in-healthcare-its-benefits-use-cases-and-challenges-1280x720.jpg" alt="Project 1 Image">
+                    <div class="summary-info">
+                         <h3>Project Title 1: Medbot</h3>
+                         <p class="project-description-short"> MEDBOT is envisioned as an AI-driven health chatbot designed to improve access to basic medical information and guidance, aiming to empower users to understand their health better and make informed decisions about seeking professional care when needed.</p>
                     </div>
                     <span class="toggle-icon"></span>
                 </label>
@@ -82,7 +92,6 @@
                 <div class="project-details-content">
                     <p class="project-description-full">
                         The Medical Health Bot is an AI-driven chatbot designed to provide users with instant medical guidance, symptom assessment, and basic health-related information. It acts as a virtual assistant that interacts with users through natural language, helping bridge the gap between patients and healthcare resources—especially in situations where immediate consultation with a healthcare provider is not available.
-                        This bot was developed with the goal of increasing accessibility to preliminary healthcare information and reducing unnecessary hospital visits for minor or common symptoms. It is not a replacement for professional diagnosis but rather a supportive tool to help users make informed decisions.
                     </p>
                     <ul class="project-details-list">
                         <li><strong> Role: </strong>My Role:
@@ -94,16 +103,20 @@
                          <li>Basic health advice</li>
                          <li>24/7 chatbot support.</li>
                          </ul>
+                    </ul>
                     <div class="project-links">
-                         <a href="https://raw.githubusercontent.com/Amogha2501/OIBSIP/master/as/code.c" target="_blank" class="btn">View Code</a> </div>
+                         <a href="https://raw.githubusercontent.com/Amogha2501/OIBSIP/master/as/code.c" target="_blank" class="btn">View Code</a>
+                    </div>
                 </div>
             </div>
             <div class="project-container">
                  <input type="checkbox" id="project2-toggle" class="project-toggle-input" hidden>
                  <label for="project2-toggle" class="project-summary">
-                 <img src="https://raw.githubusercontent.com/Amogha2501/OIBSIP/master/as/Harvest%20guard.png" alt="Project 2 Image"> <div class="summary-info">
-                    <h3>Project Title 2:HarvestGuard</h3> <p class="project-description-short">Harvest Guard is an app designed to help farmers conserve and reuse rainwater more effectively, addressing the critical issue of water scarcity in agriculture.</p>
-            </div>
+                 <img src="https://raw.githubusercontent.com/Amogha2501/OIBSIP/master/as/Harvest%20guard.png" alt="Project 2 Image">
+                 <div class="summary-info">
+                    <h3>Project Title 2:HarvestGuard</h3>
+                    <p class="project-description-short">Harvest Guard is an app designed to help farmers conserve and reuse rainwater more effectively, addressing the critical issue of water scarcity in agriculture.</p>
+                </div>
                      <span class="toggle-icon"></span>
                 </label>
                 <div class="project-details-content">
@@ -122,10 +135,11 @@
                          <li>Improved skills in designing real-world applications based on user journey and practical use cases.</li>
                          <li>Learned how to plan intuitive user flows and visually guide users through the app experience.</li>
                          </ul>
+                    </ul>
                     <div class="project-links">
                         <a href="https://embed.figma.com/proto/Dc8xUCCgr4lfHR7hVTRU0i/Knockout?node-id=1-30806&starting-point-node-id=1%3A32211&embed-host=share" allowfullscreen target="_blank" class="btn">View Live Demo</a>
                         <a href="https://github.com/Amogha2501/OIBSIP/blob/master/as/innovatex3.pdf" target="_blank" class="btn">Report</a>
-                         </div>
+                    </div>
                 </div>
             </div>
             <div class="project-container">
@@ -133,7 +147,8 @@
                 <label for="project3-toggle" class="project-summary">
                     <img src="https://raw.githubusercontent.com/Amogha2501/OIBSIP/master/as/FEASTFLOW.png" alt="FEAST Flowchart">
                     <div class="summary-info">
-                   <h3>Project Title 3: Feast Flow:Food Catering App</h3> <p class="project-description-short">This is a responsive web application for a food catering service that allows users to browse menus, place orders, and explore custom catering options. Designed with a user-friendly interface, it ensures a seamless experience across all devices.</p>
+                   <h3>Project Title 3: Feast Flow:Food Catering App</h3>
+                   <p class="project-description-short">This is a responsive web application for a food catering service that allows users to browse menus, place orders, and explore custom catering options. Designed with a user-friendly interface, it ensures a seamless experience across all devices.</p>
                    </div>
                     <span class="toggle-icon"></span>
                </label>
@@ -161,58 +176,181 @@
                    <div class="project-links">
                        <a href="https://embed.figma.com/design/5LkZ3skV1Ml6Y52kVJJ2qW/FeastFlow-App?node-id=0-1&embed-host=share" allowfullscreen target="_blank" class="btn">View Live Demo</a>
                        <a href="https://github.com/Amogha2501/OIBSIP/blob/master/as/Food%20catering%20app%20report.pdf" target="_blank" class="btn">Report</a>
-                        </div>
+                   </div>
                </div>
            </div>
 
             </section>
 
             <!-- UHV Section with Toggle Paragraph -->
-<section id="uhv" class="section-block">
-    <h2>Universal Human Values (UHV)</h2>
-    <button onclick="toggleUHVParagraph()" style="padding: 12px 20px; font-size: 1em; background: #6a1b9a; color: white; border: none; border-radius: 5px; cursor: pointer; display: block; margin: 20px auto 0 auto;">
-        Basis for Humanistic Education
-    </button>
+        <section id="uhv" class="section-block">
+            <h2>Universal Human Values (UHV)</h2>
+            <button onclick="toggleUHVParagraph()" class="uhv-toggle-btn">
+                Basis for Humanistic Education
+            </button>
 
-    <div id="uhv-paragraph" style="display: none; margin-top: 30px; font-size: 1.2em; line-height: 1.8; color: #333; text-align: justify;">
-        <p>
-            In recent times, I've been reflecting heavily upon the way education systems nowadays have slowly moved their emphasis on measurable outcomes—grades, test scores, certifications, and placements. These are clearly significant things, but I've realized how frequently we forget a simple reality: students are not simply brains to be filled up with knowledge, but entire human beings with emotions, hopes, conundrums, and personal viewpoints. In our haste to attain academic and career achievements, we lose sight of the very essence of education to cultivate the human spirit.
-        </p>
-        <p>
-            It is here that the humanistic education theme becomes so precious to me. It plants its eyes on the worth of every learner as a one-of-a-kind human being, not merely a number in a machine or a container for technical competencies. It promotes learning environments that are more respectful, empathetic, and emotionally centered. Humanistic education to me is providing a space for the students to find out who they are—to know their values, strengths, limitations, and driving force. It's teaching students to be not only knowledgeable experts but also thoughtful and reflective human beings.
-        </p>
-        <p>
-            I am most inspired by this method because it has the potential to make a deeper connection between student and teacher. Learning is not merely a one-way exchange in a humanistic classroom. Teachers are not mere authority figures, but mentors, facilitators, and even learners themselves. Teachers empower students to ask big questions, to take intellectual risks, and to try out their own ideas with confidence and curiosity. Subject matter is brought to life, not skills to be mastered, but tools to master seeing and comprehending the world and our place in it.
-        </p>
-        <p>
-            In today's fast-paced, rapidly changing world, I think humanistic education has never been more important. It does more than ready students for a job; it gets them ready for life. It cultivates the kind of thinking that values diversity, provokes creativity, and builds resilience. It causes us to listen more, work together more, and be more civic, not so much about winning, but about meaning. At its core, humanistic education reminds us that learning isn't about doing—it's about changing. And in that changing, we encounter not merely knowledge, but meaning.
-        </p>
-        <p>
-            Secondly, humanistic education builds a very solid sense of community throughout the process of learning. It shows students that learning is something that is not done in isolation but as a collective experience based on respect and cooperation. When classrooms are welcoming and inclusive, students learn the importance of collective development over competitive individuality. They learn that their voice matters and listening to others—particularly others with different experience and backgrounds—is an affirmative act of learning. This not only builds interpersonal resilience but also creates a culture of togetherness, empathy, and civic responsibility that spreads well beyond the classroom.
-        </p>
-        <p>
-            Alongside formative effects on individual students, humanistic education can transform cultures of learning. As applied by schools, they transition from rigid hierarchies and mechanistic routines to adaptive, student-focused ecosystems. These become more agile, innovative, and attuned to actual student needs. They affirm diversity in all its manifestations—intellectual, emotional, cultural—and recognize that an education-by-numbers strategy is restrictive and unfair. In doing this, they are environments where all students can excel, not only those who meet the traditional view of academic achievement.
-        </p>
-        <p>
-            No less crucial is the exercise of student agency in a humanist classroom. When learners are allowed to manage their own learning—whether through project learning, open discussion, or independent research—they start taking charge of their own learning. They are more motivated, engaged, and self-assured. Autonomy develops critical thinking abilities and problem-solving capacities that are in such high demand out there in the real world. More fundamentally, it teaches students that they are not passive consumers of facts, but productive creators of their own destinies. That is an attitude shift that can be transformational.
-        </p>
-        <p>
-            Moving forward, I think the education of the future needs to be based on humanistic principles if we are to respond adequately to the complexities of the 21st century. Since we are confronted with world challenges—climate change, automation, disparity, and mental health crises—our education must not only prepare capable professionals but conscious citizens. We need educational systems that also develop wisdom, compassion, and courage in addition to intellect. By committing to humanistic education, we are taking a courageous move towards imagining education not as readying for work, but for a life of purpose, connection, and meaning. It's not just about building careers—it's about building mankind.
-        </p>
-    </div>
-</section>
+            <div id="uhv-paragraph">
+                <p>
+                    In recent times, I've been reflecting heavily upon the way education systems nowadays have slowly moved their emphasis on measurable outcomes—grades, test scores, certifications, and placements. These are clearly significant things, but I've realized how frequently we forget a simple reality: students are not simply brains to be filled up with knowledge, but entire human beings with emotions, hopes, conundrums, and personal viewpoints. In our haste to attain academic and career achievements, we lose sight of the very essence of education to cultivate the human spirit.
+                </p>
+                <p>
+                    It is here that the humanistic education theme becomes so precious to me. It plants its eyes on the worth of every learner as a one-of-a-kind human being, not merely a number in a machine or a container for technical competencies. It promotes learning environments that are more respectful, empathetic, and emotionally centered. Humanistic education to me is providing a space for the students to find out who they are—to know their values, strengths, limitations, and driving force. It's teaching students to be not only knowledgeable experts but also thoughtful and reflective human beings.
+                </p>
+                <p>
+                    I am most inspired by this method because it has the potential to make a deeper connection between student and teacher. Learning is not merely a one-way exchange in a humanistic classroom. Teachers are not mere authority figures, but mentors, facilitators, and even learners themselves. Teachers empower students to ask big questions, to take intellectual risks, and to try out their own ideas with confidence and curiosity. Subject matter is brought to life, not skills to be mastered, but tools to master seeing and comprehending the world and our place in it.
+                </p>
+                <p>
+                    In today's fast-paced, rapidly changing world, I think humanistic education has never been more important. It does more than ready students for a job; it gets them ready for life. It cultivates the kind of thinking that values diversity, provokes creativity, and builds resilience. It causes us to listen more, work together more, and be more civic, not so much about winning, but about meaning. At its core, humanistic education reminds us that learning isn't about doing—it's about changing. And in that changing, we encounter not merely knowledge, but meaning.
+                </p>
+                <p>
+                    Secondly, humanistic education builds a very solid sense of community throughout the process of learning. It shows students that learning is something that is not done in isolation but as a collective experience based on respect and cooperation. When classrooms are welcoming and inclusive, students learn the importance of collective development over competitive individuality. They learn that their voice matters and listening to others—particularly others with different experience and backgrounds—is an affirmative act of learning. This not only builds interpersonal resilience but also creates a culture of togetherness, empathy, and civic responsibility that spreads well beyond the classroom.
+                </p>
+                <p>
+                    Alongside formative effects on individual students, humanistic education can transform cultures of learning. As applied by schools, they transition from rigid hierarchies and mechanistic routines to adaptive, student-focused ecosystems. These become more agile, innovative, and attuned to actual student needs. They affirm diversity in all its manifestations—intellectual, emotional, cultural—and recognize that an education-by-numbers strategy is restrictive and unfair. In doing this, they are environments where all students can excel, not only those who meet the traditional view of academic achievement.
+                </p>
+                <p>
+                    No less crucial is the exercise of student agency in a humanist classroom. When learners are allowed to manage their own learning—whether through project learning, open discussion, or independent research—they start taking charge of their own learning. They are more motivated, engaged, and self-assured. Autonomy develops critical thinking abilities and problem-solving capacities that are in such high demand out there in the real world. More fundamentally, it teaches students that they are not passive consumers of facts, but productive creators of their own destinies. That is an attitude shift that can be transformational.
+                </p>
+                <p>
+                    Moving forward, I think the education of the future needs to be based on humanistic principles if we are to respond adequately to the complexities of the 21st century. Since we are confronted with world challenges—climate change, automation, disparity, and mental health crises—our education must not only prepare capable professionals but conscious citizens. We need educational systems that also develop wisdom, compassion, and courage in addition to intellect. By committing to humanistic education, we are taking a courageous move towards imagining education not as readying for work, but for a life of purpose, connection, and meaning. It's not just about building careers—it's about building mankind.
+                </p>
+            </div>
+        </section>
 
-         <section id="contact" class="section-block">
+        <section id="contact" class="section-block">
             <h2>Get in Touch</h2>
-            <p> <center>Want to connect? Feel free to reach out!</center></p>
+            <p style="text-align: center;">Want to connect? Feel free to reach out!</p>
             <div class="contact-links">
-               <p><strong>Email:</strong>hshettyamogha@gmail.com</p><a href="https://www.linkedin.com/in/amogha-h-shetty-124246293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-btn">LinkedIn</a> <a href="https://github.com/Amogha2501" target="_blank" class="contact-btn">GitHub</a> </div>
+               <p><strong>Email:</strong>hshettyamogha@gmail.com</p>
+               <a href="https://www.linkedin.com/in/amogha-h-shetty-124246293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-btn">LinkedIn</a>
+               <a href="https://github.com/Amogha2501" target="_blank" class="contact-btn">GitHub</a>
+            </div>
         </section>
 
     </main>
 
     <footer class="site-footer">
-        <p>&copy; 2025 Amogha H Shetty. Built with ❤️ and code.</p> </footer>
+        <p>&copy; 2025 Amogha H Shetty. Built with ❤️ and code.</p>
+    </footer>
 
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Back to Top">&#9650;</button>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Toggle UHV paragraph with smooth transition
+        function toggleUHVParagraph() {
+            const paragraph = document.getElementById('uhv-paragraph');
+            paragraph.classList.toggle('show');
+        }
+
+        // Intersection Observer for fade-in animations
+        const sectionBlocks = document.querySelectorAll('.section-block, h2');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, observerOptions);
+
+        sectionBlocks.forEach(block => {
+            observer.observe(block);
+        });
+
+        // Sticky navigation bar change on scroll
+        const siteNav = document.querySelector('.site-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) { // Adjust scroll threshold as needed
+                siteNav.classList.add('scrolled');
+            } else {
+                siteNav.classList.remove('scrolled');
+            }
+        });
+
+        // Back to Top button functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // Show button after scrolling 300px
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Name Letter-by-Letter Animation and Header Content Loading
+        function animateNameLetters(nameElement, delayPerLetter = 80) {
+            const nameText = nameElement.textContent;
+            nameElement.innerHTML = ''; // Clear original text content
+
+            nameText.split('').forEach((char, index) => {
+                const span = document.createElement('span');
+                span.textContent = char;
+                span.classList.add('name-letter');
+                // If it's a space, ensure it doesn't cause layout issues
+                if (char === ' ') {
+                    span.innerHTML = '&nbsp;';
+                }
+                span.style.animationDelay = `${index * delayPerLetter}ms`;
+                nameElement.appendChild(span);
+            });
+        }
+
+        // Preloader and Header Animation functionality
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.classList.add('hidden');
+                // Optional: Remove preloader from DOM after transition
+                preloader.addEventListener('transitionend', () => {
+                    preloader.remove();
+                });
+            }
+
+            const headerContent = document.querySelector('.header-content');
+            const myNameElement = document.getElementById('my-name');
+            const originalNameLength = myNameElement.textContent.length; // Capture length before clearing
+
+            // Trigger profile photo animation immediately after preloader fades
+            headerContent.querySelector('.profile-photo').style.opacity = 1;
+            headerContent.querySelector('.profile-photo').style.transform = 'translateY(0) scale(1)';
+
+            // Set a small delay for the name letters to start after preloader fade
+            setTimeout(() => {
+                animateNameLetters(myNameElement);
+            }, 800); // This delay aligns with preloader transition
+
+            // Trigger tagline animation after the name and photo have had time to appear
+            // Adjusted delay to ensure it appears after name animation completes
+            setTimeout(() => {
+                headerContent.querySelector('.tagline').style.opacity = 1;
+                headerContent.querySelector('.tagline').style.transform = 'translateY(0) scale(1)';
+            }, 800 + (originalNameLength * 80) + 400); // Approx total name animation + 400ms buffer
+        });
+    </script>
 </body>
 </html>
